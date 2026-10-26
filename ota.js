@@ -117,7 +117,7 @@ function onDisconnected() {
 export function btConn() {
     log('Requesting Bluetooth Device...');
     navigator.bluetooth.requestDevice(
-        {filters: [{namePrefix: 'BlueRetro'}],
+        {filters: [{namePrefix: 'ReLiveBT'}, {namePrefix: 'BlueRetro'}],
         optionalServices: [brUuid[0]]})
     .then(device => {
         log('Connecting to GATT Server...');
@@ -169,7 +169,7 @@ export function btConn() {
         document.getElementById("divInfo").innerHTML = 'Connected to: ' + name + ' (' + bdaddr + ') [' + app_ver + ']';
         try {
             if (app_ver.indexOf(latest_ver) == -1) {
-                document.getElementById("divInfo").innerHTML += '<br><br>Download latest FW ' + latest_ver + ' from <a href=\'https://github.com/darthcloud/BlueRetro/releases\'>GitHub</a>';
+                document.getElementById("divInfo").innerHTML += '<br><br>Download latest FW ' + latest_ver + ' from <a href=\'https://github.com/TecnoBit-Videojuegos/ReLiveBT-Controller/releases\'>GitHub</a>';
             }
         }
         catch (e) {

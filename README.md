@@ -1,8 +1,11 @@
-# BlueRetroWebCfg
-BlueRetro Web-Bluetooth configuration pages
+# ReLiveBT Web Config
 
-Those pages are base on [Google Chrome Samples](https://github.com/GoogleChrome/samples)
+Paginas de configuracion por Web Bluetooth para el adaptador **ReLiveBT Controller**.
+Funcionan con adaptadores cuyo nombre empieza con `ReLiveBT` o `BlueRetro`.
 
-More detail BlueRetro:\
-[Main hackaday.io page](https://hackaday.io/project/170365-blueretro)\
-[Software files repository](https://github.com/darthcloud/BlueRetro)
+Requiere Chrome o Edge (PC o Android). No funciona en Safari de iPhone.
+
+Firmware: [ReLiveBT-Controller](https://github.com/TecnoBit-Videojuegos/ReLiveBT-Controller)
+
+Basado en [BlueRetroWebCfg](https://github.com/darthcloud/BlueRetroWebCfg) de Jacques Gagnon (darthcloud), licencia Apache-2.0.
+Las paginas estan basadas en [Google Chrome Samples](https://github.com/GoogleChrome/samples).
